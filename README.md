@@ -93,10 +93,10 @@ The app follows a professional MVC architecture and includes:
 
 ```mermaid
 graph TD;
-    A[JSP Pages (View)] --> B[Servlets (Controller)];
-    B --> C[Service Layer];
-    C --> D[Models];
-    C --> E[Validators];
+    A["JSP Pages (View)"] --> B["Servlets (Controller)"];
+    B --> C["Service Layer"];
+    C --> D["Models"];
+    C --> E["Validators"];
 
 ```
 
@@ -194,10 +194,10 @@ Click below to view all screenshots:
 
 ## 🎬 Run Demo
 
-Below is a short demo of the CLI in action:
+Below is a short demo of the BMi-Health-App in action:
 
 <p align="center">
-  <img src="LMS-Run.gif" width="600" />
+  <img src="BMI-Health-App.gif" width="600" />
 </p>
 
 ## 🛡️ Exception Handling
