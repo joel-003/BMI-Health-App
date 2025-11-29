@@ -1,0 +1,305 @@
+/* ---------------- GLOBAL ---------------- */
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    padding: 12px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    box-sizing: border-box;
+    overflow: hidden; /* prevents scroll */
+}
+
+/* LOGO */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 38px;
+    height: 38px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e63ff;
+}
+
+/* NAV LINKS (DESKTOP) */
+.nav-links {
+    display: flex;
+    gap: 28px;
+    white-space: nowrap;
+
+    /* KEY FIX — prevents overflow on desktop */
+    max-width: 60%;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1e63ff;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #222;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+/* --------------- MOBILE NAVBAR --------------- */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        gap: 20px;
+        border-top: 1px solid #eee;
+        background: #fff;
+
+        max-width: 100%; /* override desktop value */
+    }
+
+    .nav-links.open {
+        display: flex !important;
+    }
+
+    /* Hamburger animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}
+
+/* ---------------- TITLES ---------------- */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* ---------------- CARD LAYOUT ---------------- */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    padding: 10px 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 20px 25px 35px;
+    width: 480px;
+    min-width: 300px;
+}
+
+.card-header {
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.gradient-blue {
+    background: linear-gradient(90deg, #1e88e5, #00bcd4);
+}
+
+.gradient-green {
+    background: linear-gradient(90deg, #009e60, #00c853);
+}
+
+/* ---------------- INPUTS ---------------- */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-flex {
+    display: flex;
+    gap: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #1e88e5;
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: #1e63ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.btn:hover {
+    background: #004ae0;
+}
+
+/* ---------------- RESULT SECTION ---------------- */
+.bmi-value {
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.bmi-value-if-null {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin: 15px 0;
+}
+
+.bmi-icon {
+    max-width: 100px;
+}
+
+.bmi-status {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.bmi-status-if-null {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+}
+
+.note-box {
+    background: #f1f3f5;
+    padding: 14px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+/* ---------------- INFO SECTION ---------------- */
+.info-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.info-section h2 {
+    margin-top: 25px;
+    color: #1e63ff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.info-section p,
+.info-section li {
+    margin-bottom: 12px;
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+    background: linear-gradient(90deg, #1e88e5, #00bcd4);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/*---------------- ERROR ----------------- */
+.error-box {
+    background: #ffe6e6;
+    border-left: 4px solid #ff4d4d;
+    padding: 12px;
+    border-radius: 8px;
+    color: #d10000;
+    margin-bottom: 15px;
+}
