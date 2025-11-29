@@ -45,7 +45,7 @@
 <div class="container">
 
     <!-- INPUT CARD -->
-    <form class="card" action="water-calc" method="post">
+    <form class="form-card" action="water-calc" method="post">
         <div class="card-header gradient-blue">Enter Your Details</div>
 
         <!-- Weight -->
@@ -70,7 +70,7 @@
 
 
     <!-- RESULT CARD -->
-    <div class="card result-card">
+    <div class="form-card result-card">
         <div class="card-header gradient-green">Your Water Requirement</div>
 
         <% if (request.getAttribute("error") != null) { %>
