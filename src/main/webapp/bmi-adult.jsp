@@ -35,7 +35,7 @@
     <!-- Navigation Links -->
     <nav class="nav-links">
         <a href="index.jsp">Home</a>
-        <a href="#how-to-use.jsp">How-to-Use</a>
+        <a href="#how-to-use">How-to-Use</a>
         <a href="#faq">FAQ</a>
     </nav>
 </header>

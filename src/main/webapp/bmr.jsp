@@ -86,7 +86,7 @@
         <!-- Activity Level -->
         <div class="input-group">
             <label for="activity">Activity Level</label>
-            <select name="activity" required>
+            <select id="activity" name="activity" required>
                 <option value="1.2">Sedentary (Little or no exercise)</option>
                 <option value="1.375">Light Activity (1–3 days/week)</option>
                 <option value="1.55">Moderate (3–5 days/week)</option>
@@ -141,7 +141,7 @@
         </div>
 
         <% } else { %>
-        <div class="bmi-value-if-null"><img src="./images/calc-no-value.png" class="bmi-icon"/></div>
+        <div class="bmi-value-if-null"><img src="./images/calc-no-value.png" class="bmi-icon" alt="no result image"/></div>
         <div class="bmi-status-if-null">Enter your details to see your BMR</div>
         <% } %>
     </div>

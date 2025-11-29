@@ -2,7 +2,6 @@ package com.github.joel003.service;
 
 import com.github.joel003.exception.InvalidInputException;
 import com.github.joel003.model.Water;
-import com.github.joel003.util.InputValidator;
 import com.github.joel003.util.MeasurementValidator;
 
 public class WaterService {

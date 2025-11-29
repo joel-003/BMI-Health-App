@@ -1,6 +1,5 @@
 package com.github.joel003.controller;
 
-import com.github.joel003.exception.InvalidInputException;
 import com.github.joel003.model.BMIAdult;
 import com.github.joel003.service.BMIAdultService;
 import com.github.joel003.util.InputValidator;
@@ -11,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(name = "BMI-Adult", value = "/bmi-adult")
 public class BMIAdultServlet extends HttpServlet {

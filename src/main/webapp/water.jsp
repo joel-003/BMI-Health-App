@@ -23,7 +23,7 @@
 <!-- NAVBAR -->
 <header class="navbar">
     <div class="nav-logo">
-        <img src="./images/app-logo.png" class="logo-img">
+        <img src="./images/app-logo.png" class="logo-img" alt="logo">
         <span class="logo-text">BMI Health</span>
     </div>
 
@@ -91,7 +91,7 @@
         <% } else { %>
 
         <div class="bmi-value-if-null">
-            <img src="./images/calc-no-value.png" class="bmi-icon">
+            <img src="./images/calc-no-value.png" class="bmi-icon" alt="no-result-img">
         </div>
         <div class="bmi-status-if-null">Enter your details to calculate water intake</div>
 

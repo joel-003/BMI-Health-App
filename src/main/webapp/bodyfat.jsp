@@ -140,7 +140,7 @@
         </div>
 
         <% } else { %>
-        <div class="bmi-value-if-null"><img src="./images/calc-no-value.png" class="bmi-icon"></div>
+        <div class="bmi-value-if-null"><img src="./images/calc-no-value.png" class="bmi-icon" alt="no-result-img"></div>
         <div class="bmi-status-if-null">Enter measurements to calculate body fat %</div>
         <% } %>
 
